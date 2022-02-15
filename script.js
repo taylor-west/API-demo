@@ -58,9 +58,9 @@ const getIP = fetch("apiKeys.txt");
           let postal_code = json.postal_code;
           let country = json.country;
 
-          let ipUpdateString = "<p>Your IP Address is: <div id=\"ipAddressString\">" + ip + "</div></p>";
+          let ipUpdateString = "<p>Your IP Address is: <div class=\"ipInfo\">" + ip + "</div></p>";
           ipUpdateString += "<p>That means that you are in </p>";
-          ipUpdateString += "<p><strong>" + city + ", " + region + "</strong></p>";
+          ipUpdateString += "<div class=\"ipInfo\"><p>" + city + ", " + region + "</p></div>";
           //updates IP address and changes block
           document.getElementById("ipResults").innerHTML = ipUpdateString;
           document.getElementById("ip-form").style.display = "none";

@@ -30,6 +30,11 @@ tbody{
   width: 100%
   border: 1px solid #FF0000;
 }
+.ipInfo{
+  text-align: center;
+  font-weight: bold;
+  padding: 1em;
+}
 #github_link{
   color: white;
   text-decoration: none;
@@ -49,11 +54,7 @@ tbody{
 #quote-block{
   padding: 3em;
 }
-#ipAddressString{
-  text-align: center;
-  font-weight: bold;
-  padding: 1em;
-}
+
 #ipSubmit, #pinballSubmit1, #pinballSubmit2{
   width: 8em;
   margin: 3em;
