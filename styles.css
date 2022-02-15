@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0 5em;
+  color: #3A3B3C;
+  background-color: #FAFAFA;
+}
+footer{
+  position: absolute;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3A3B3C;
+  color: white;
+  text-align: center;
+}
+h1, p{
+  text-align: center;
+}
+h2{
+  margin-top: 1em;
+}
+form, label{
+  font-size: 1em;
+}
+tbody{
+  width: 100%
+  border: 1px solid #FF0000;
+}
+#github_link{
+  color: white;
+  text-decoration: none;
+}
+#github_link:hover{
+  color: #A7E9F7;
+}
+#quote-block{
+  text-align: center;
+  font-style: italic;
+}
+#pinballOutcomeTable{
+  margins: 1em auto;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+#quote-block{
+  padding: 3em;
+}
+#ipAddressString{
+  text-align: center;
+  font-weight: bold;
+  padding: 1em;
+}
+#ipSubmit, #pinballSubmit1, #pinballSubmit2{
+  width: 8em;
+  margin: 3em;
+}
+td {
+  padding: 1em;
+  text-align: left;
+}
+@media (max-width: 990px) {
+  body{
+    padding: 2em;
+    font-size: 1.5em;
+  }
+
+}

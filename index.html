@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>API Demo</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1>API Demo</h1>
+    <div class="welcome-block">
+      <p>Welcome to this page demonstrating the use of various APIs! In the words of Kayne West,</p>
+      <div id="quote-block">
+      </div>
+      <p>now isn't that just beautiful? Anyways, feel free to poke around and check out whats happening under the hood.</p>
+    </div>
+    <div class="main-block"><h2>IP Address</h2>
+      <form id="ip-form">
+        <label>Click to find your IP address!</label>
+        <input id="ipSubmit" type="submit" value="Find IP"></input>
+      </form>
+      <div id="ipResults">
+      </div>
+    </div>
+    <div class="main-block" id="pinball-block" style="display: none"><h2>Pinball Machines</h2>
+      <form id="pinball-form">
+        <label>Click to find pinball machines near you!</label>
+        <input id="pinballSubmit1" type="submit" value="Find Machines"></input>
+      </form>
+      <div id="pinballResults">
+      </div>
+    </div>
+
+    <footer>
+      <p>GitHub: <a href="https://github.com/taylor-west/API-demo" id="github_link">API-demo</a></p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="/script.js">
+    </script>
+  </body>
+</html>
