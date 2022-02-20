@@ -63,12 +63,16 @@ const getIP = fetch("apiKeys.txt");
           ipUpdateString += "<div class=\"ipInfo\"><p>" + city + ", " + region + "</p></div>";
           //updates IP address and changes block
           document.getElementById("ipResults").innerHTML = ipUpdateString;
+          document.getElementById("ipResults").className = "sub-block";
           document.getElementById("ip-form").style.display = "none";
+          document.getElementById("ipResults").style.display = "block";
+
           //displays the option to find local pinball machines
-          document.getElementById("pinball-block").style.display = "block";
+          document.getElementById("pinball-input-block").className = "main-block";
           document.getElementById("pinballSubmit1").addEventListener("click",function(event){
             event.preventDefault();
             document.getElementById("pinball-form").style.display = "none";
+            document.getElementById("pinball-input-block").style.display = "block";
             //checks if country is US for the pinball machine
             if(country != "United States"){
               alert("You are located outside of the United States. Unfortuntely this means that we cannot provide data on local pinball machines.")
@@ -78,11 +82,11 @@ const getIP = fetch("apiKeys.txt");
                 .then(CheckURL)
                 .then(function(json){
                   console.log(json);
-                  let numMachinesString = "<p>There are " + json.location_machine_xrefs.length + " pinball machines in your region!</p>";
+                  let numMachinesString = "<p>There are " + json.location_machine_xrefs.length + " pinball machines in the region of " + region + "!</p>";
 
                   //adds code to DOM to prompt for number of machines to display
                   displayPinballForm = "<form id=\"displayPinballNumberForm\">";
-                  displayPinballForm +="<label>Please enter a number between 1-25</label><br/>";
+                  displayPinballForm +="<label>Please enter a number between 1-50</label><br/>";
                   displayPinballForm +="<input id=\"pinballInput\" type=\"text\"></input>"
                   displayPinballForm += "<input id=\"pinballSubmit2\" type=\"submit\" value=\submit\" style=\"display: none\"></input></form>";
                   let pinballOutcomeDiv = "<div id=\"pinballOutcomeBlock\"></div>";
@@ -92,7 +96,7 @@ const getIP = fetch("apiKeys.txt");
                     event.preventDefault();
                     try{
                       let inputNum = document.getElementById("pinballInput").value;
-                      if(inputNum > 25){
+                      if(inputNum > 50){
                         alert("You have disobeyed the rules and displeased the gods.");
                         throw(Error);
                       }

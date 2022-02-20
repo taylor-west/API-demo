@@ -1,13 +1,20 @@
 *{
   margin: 0;
   padding: 0;
+  font-size: 1.1em;
 }
 body{
   margin: 0 5em;
   color: #3A3B3C;
   background-color: #FAFAFA;
+  font-family: sans-serif;
+//  overflow: visible;
+  padding-bottom: 5em;
 }
 footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   position: fixed;
   left: 0;
@@ -16,9 +23,15 @@ footer{
   background-color: #3A3B3C;
   color: white;
   text-align: center;
+  height: 3em;
+  overflow: hidden;
 }
 h1, p{
   text-align: center;
+}
+h1{
+  width: 100%;
+//  border: 1px solid black;
 }
 h2{
   margin-top: 1em;
@@ -35,9 +48,53 @@ tbody{
   font-weight: bold;
   padding: 1em;
 }
+.welcome-block {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.main-block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  //border: 1px dashed black;
+  padding: 1em;
+
+}
+.results-block{
+  text-align:  center;
+  align-content: center;
+  font-size: 1.5em;
+}
+.title{
+  font-size: 2em;
+  padding-top: 2em;
+}
+.sub-block{
+  //border: 1px solid #FF0000;
+  width: 50%;
+  font-size: 1.5em;
+}
+.results-block{
+  font-size: 1em;
+}
+.main-block0 {
+  display: none;
+  height: 30%;
+}
+.sub-block0 {
+//  display: block;
+  height: 30%;
+}
+#ip-block{
+  //border: 1px solid #FF0000;
+  padding: 3em;
+  text-align: center;
+}
 #github_link{
   color: white;
   text-decoration: none;
+  align-items: center;
 }
 #github_link:hover{
   color: #A7E9F7;
@@ -45,28 +102,42 @@ tbody{
 #quote-block{
   text-align: center;
   font-style: italic;
+  padding: 3em;
 }
 #pinballOutcomeTable{
   margins: 1em auto;
   padding-top: 3em;
   padding-bottom: 3em;
+  width: 100%;
 }
-#quote-block{
-  padding: 3em;
+#pinball-form{
+  text-align: center;
 }
 
 #ipSubmit, #pinballSubmit1, #pinballSubmit2{
   width: 8em;
-  margin: 3em;
+  //margin: 3em;
 }
+#pinball-input-block{
+  flex-direction: row-reverse;
+  text-align: center;
+  font-size: 1.5em;
+}
+
 td {
   padding: 1em;
   text-align: left;
 }
-@media (max-width: 990px) {
+@media screen and (max-width: 500px;) {
   body{
     padding: 2em;
     font-size: 1.5em;
+    border: 1px solid black;
   }
-
+  footer{
+    font-size: 2em;
+  }
+  .sub-block0 {
+    font-size: 1.5em;
+  }
 }

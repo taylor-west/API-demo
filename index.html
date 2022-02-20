@@ -6,26 +6,36 @@
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    <h1>API Demo</h1>
+    <div class="title">
+      <h1>API Demo</h1>
+    </div>
     <div class="welcome-block">
       <p>Welcome to this page demonstrating the use of various APIs! In the words of Kayne West,</p>
       <div id="quote-block">
       </div>
       <p>now isn't that just beautiful? Anyways, feel free to poke around and check out whats happening under the hood.</p>
     </div>
-    <div class="main-block"><h2>IP Address</h2>
-      <form id="ip-form">
+    <div class="main-block" id="ip-block">
+      <div class="sub-block" id="ip-header">
+        <h2>IP Address</h2>
+      </div>
+      <form class="sub-block" id="ip-form">
         <label>Click to find your IP address!</label>
         <input id="ipSubmit" type="submit" value="Find IP"></input>
       </form>
-      <div id="ipResults">
+      <div class="sub-block0" id="ipResults">
       </div>
     </div>
-    <div class="main-block" id="pinball-block" style="display: none"><h2>Pinball Machines</h2>
-      <form id="pinball-form">
+    <div class="main-block0" id="pinball-input-block">
+      <div class="sub-block0" id="pinball-header">
+        <h2>Pinball Machines</h2>
+      </div>
+      <form class="sub-block0" id="pinball-form">
         <label>Click to find pinball machines near you!</label>
         <input id="pinballSubmit1" type="submit" value="Find Machines"></input>
       </form>
+    </div>
+    <div class="results-block">
       <div id="pinballResults">
       </div>
     </div>
